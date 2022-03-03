@@ -2,18 +2,18 @@
 #include <cstdint>
 #include "alg.h"
 
-
 double pown(double value, uint16_t n) {
-    double nvalue = value;
-    for (int i = 1; i < n; i++) {
-        value *= nvalue;         
+    double tn = 1;
+    while (n > 0) {
+        tn *= value;
+        n--;
     }
-    return value;
+    return con;
 }
 
 uint64_t fact(uint16_t n) {
     uint64_t ft = 1;
-    while (n != 0) {
+    while (n > 0) {
       ft *= n;
       n--;
     }
