@@ -36,7 +36,7 @@ double expn(double x, uint16_t count) {
 }
 
 double sinn(double x, uint16_t count) {
-    double si;
+    double si = 0;
     uint16_t sich = 1;
     while (sich <= count) {
         si += pown(-1, sich-1)*calcItem(x, 2*sich-1);
@@ -46,7 +46,7 @@ double sinn(double x, uint16_t count) {
 }
 
 double cosn(double x, uint16_t count) {
-    double co;
+    double co = 0;
     uint16_t coch = 1;
     while (coch <= count) {
         co += pown(-1, coch-1)*calcItem(x, 2*coch-2);
